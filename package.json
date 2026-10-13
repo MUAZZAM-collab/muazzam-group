@@ -19,7 +19,9 @@
     "lucide-react": "^0.462.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwind-merge": "^2.5.5"
+    "react-router-dom": "^7.18.4",
+    "tailwind-merge": "^2.5.5",
+    "web-vitals": "^6.2.3"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.0",

@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { ArrowRight, Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -42,49 +42,29 @@ export function SiteHeader() {
         </Link>
 
         <nav className="desktop-nav" aria-label="Main navigation">
-          <Link to="/divisions" activeProps={{ className: "active" }}>
+          <NavLink to="/divisions" className={({ isActive }) => (isActive ? "active" : "")}>
             Divisions
-          </Link>
-          <Link
-            to="/services/$slug"
-            params={{ slug: "property-construction" }}
-            activeProps={{ className: "active" }}
-          >
+          </NavLink>
+          <NavLink to="/services/property-construction" className={({ isActive }) => (isActive ? "active" : "")}>
             Property
-          </Link>
-          <Link
-            to="/services/$slug"
-            params={{ slug: "technology" }}
-            activeProps={{ className: "active" }}
-          >
+          </NavLink>
+          <NavLink to="/services/technology" className={({ isActive }) => (isActive ? "active" : "")}>
             Technology
-          </Link>
-          <Link
-            to="/services/$slug"
-            params={{ slug: "tailoring" }}
-            activeProps={{ className: "active" }}
-          >
+          </NavLink>
+          <NavLink to="/services/tailoring" className={({ isActive }) => (isActive ? "active" : "")}>
             Tailoring
-          </Link>
-          <Link
-            to="/services/$slug"
-            params={{ slug: "events-media" }}
-            activeProps={{ className: "active" }}
-          >
+          </NavLink>
+          <NavLink to="/services/events-media" className={({ isActive }) => (isActive ? "active" : "")}>
             Events
-          </Link>
-          <Link
-            to="/services/$slug"
-            params={{ slug: "legal-consultancy" }}
-            activeProps={{ className: "active" }}
-          >
+          </NavLink>
+          <NavLink to="/services/legal-consultancy" className={({ isActive }) => (isActive ? "active" : "")}>
             Legal
-          </Link>
+          </NavLink>
         </nav>
 
         <div className="header-actions">
           <Button asChild variant="neon">
-            <Link to="/contact" search={{ division: "" }}>
+            <Link to="/contact?division=">
               Enquire <ArrowRight size={15} />
             </Link>
           </Button>
@@ -106,16 +86,11 @@ export function SiteHeader() {
             All divisions
           </Link>
           {services.map((service) => (
-            <Link
-              key={service.slug}
-              to="/services/$slug"
-              params={{ slug: service.slug }}
-              onClick={close}
-            >
+            <Link key={service.slug} to={`/services/${service.slug}`} onClick={close}>
               {service.title}
             </Link>
           ))}
-          <Link to="/contact" search={{ division: "" }} onClick={close}>
+          <Link to="/contact?division=" onClick={close}>
             Start an enquiry
           </Link>
         </nav>
@@ -151,8 +126,7 @@ export function ServiceDirectory() {
         {services.map((service, index) => (
           <Link
             key={service.slug}
-            to="/services/$slug"
-            params={{ slug: service.slug }}
+            to={`/services/${service.slug}`}
             className={`service-card ${service.variant ?? ""}`}
             style={{
               "--card-accent": service.accent,
@@ -198,7 +172,7 @@ export function EnquiryBand() {
             that matters to you.
           </p>
           <Button asChild variant="neon">
-            <Link to="/contact" search={{ division: "" }}>
+            <Link to="/contact?division=">
               Start an enquiry <ArrowRight size={15} />
             </Link>
           </Button>
