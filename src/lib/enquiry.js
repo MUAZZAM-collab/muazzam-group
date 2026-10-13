@@ -6,7 +6,7 @@
 // Prod: either serve both behind one domain (reverse proxy /api -> backend), or set
 //       VITE_API_URL=https://api.yourdomain.com at build time (and add your site's
 //       origin to CORS_ORIGINS in the backend .env).
-const API_BASE = (import.meta.env?.CONFIG ?? "").replace(/\/+$/, "");
+const API_BASE = (import.meta.env?.VITE_API_URL || "").replace(/\/+$/, "");
 
 async function api(path, { method = "GET", token, body } = {}) {
   let res;
