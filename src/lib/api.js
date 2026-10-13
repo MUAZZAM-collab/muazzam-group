@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.CONFIG ||"http://localhost:5000";
+const API_URL = import.meta.env.CONFIG;
 
 async function request(path, options = {}) {
   const res = await fetch(`${API_URL}${path}`, {
