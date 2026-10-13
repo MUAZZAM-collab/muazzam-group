@@ -1,0 +1,4 @@
+const tsrStartManifest = () => ({ routes: { __root__: { filePath: "/Users/apple/my-website/src/routes/__root.jsx", children: ["/", "/contact", "/divisions", "/admin/enquiries", "/services/$slug"], preloads: ["/assets/index-D0VXvbdQ.js"], scripts: [{ attrs: { type: "module", async: true, src: "/assets/index-D0VXvbdQ.js" } }] }, "/": { filePath: "/Users/apple/my-website/src/routes/index.jsx", children: void 0, preloads: ["/assets/index-C_juo7m4.js"] }, "/contact": { filePath: "/Users/apple/my-website/src/routes/contact.jsx", children: void 0, preloads: ["/assets/contact-CRiiv7aq.js"] }, "/divisions": { filePath: "/Users/apple/my-website/src/routes/divisions.jsx", children: void 0, preloads: ["/assets/divisions-DEASbJSe.js"] }, "/services/$slug": { filePath: "/Users/apple/my-website/src/routes/services.$slug.jsx", children: void 0, preloads: ["/assets/services._slug-CoA3z5cc.js"] } } });
+export {
+  tsrStartManifest
+};
