@@ -1,4 +1,6 @@
-const API_URL = import.meta.env.CONFIG;
+// Vite only exposes environment variables prefixed with VITE_ to browser code.
+// An empty base keeps same-origin deployments working with /api rewrites/proxies.
+const API_URL = (import.meta.env.VITE_API_URL || "").replace(/\/+$/, "");
 
 async function request(path, options = {}) {
   const res = await fetch(`${API_URL}${path}`, {
