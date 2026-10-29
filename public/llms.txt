@@ -1,0 +1,18 @@
+# Muazzam-Group
+
+> Muazzam-Group — key pages for AI systems and answer engines.
+
+## Pages
+- [Property & Construction — Muazzam Group](https://muazzam-group.vercel.app/services/property-construction): High-rise builds, land acquisition and property sale or purchase.
+- [Technology — Muazzam Group](https://muazzam-group.vercel.app/services/technology): Software, web platforms and mobile application design.
+- [Start an enquiry — Muazzam Group](https://muazzam-group.vercel.app/contact?division=): Prepare an enquiry for property, IT, tuition, catering, events, tailoring, legal consultancy, school partnerships or wholesale.
+- [School Investment — Muazzam Group](https://muazzam-group.vercel.app/services/school-investment): Partnerships, campus building and school opening.
+- [Nine service divisions — Muazzam Group](https://muazzam-group.vercel.app/): Construction, property, IT, O/A-level tuition, catering, events, tailoring, legal consultancy, school partnerships and wholesale services.
+- [Tailoring — Muazzam Group](https://muazzam-group.vercel.app/services/tailoring): Bridal and groom wear, party and occasion clothing.
+- [Divisions — Muazzam Group](https://muazzam-group.vercel.app/divisions): Browse Muazzam Group's nine service divisions across property, construction, legal, education, catering, events and more.
+- [Education — Muazzam Group](https://muazzam-group.vercel.app/services/education): O/A-level tuition and teachers across all subjects.
+- [Legal Consultancy — Muazzam Group](https://muazzam-group.vercel.app/services/legal-consultancy): Guidance for police, court and civil matters.
+- [Catering — Muazzam Group](https://muazzam-group.vercel.app/services/catering): Wedding feasts, birthday menus and event food service.
+- [Wholesale — Muazzam Group](https://muazzam-group.vercel.app/services/wholesale): Bulk purchasing across categories on request.
+- [Nine service divisions — Muazzam Group](https://muazzam-group.vercel.app/): Construction, property, IT, O/A-level tuition, catering, events, tailoring, legal consultancy, school partnerships and wholesale services.
+- [Events & Media — Muazzam Group](https://muazzam-group.vercel.app/services/events-media): Celebrations, stage shows, filmmaking and live entertainment.
